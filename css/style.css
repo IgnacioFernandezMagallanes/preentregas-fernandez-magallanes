@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General */
+header{
+    background-color: rgba(255, 150, 27, 0.3);
+    font-size: 30px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.navBar{
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    gap: 20px;
+}
+
+ul li{
+    list-style: none;
+    }
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 90%;
+}
+
+
+main{
+    background-color: rgba(255, 150, 27, 0.6);
+    font-size: 20px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Inicio */
+.carrusel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    gap: 1%;
+}
+
+.carruselImg{
+    width: 550px;
+    height: 390px;
+}
+
+
+.promos{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.promosTitulo{
+    text-align: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.promosGrid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "1 2 3 4"
+    ;
+    gap: 30px;
+}
+
+
+.promosImg{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.promosText{
+    font-size: 15px;
+    margin: 50px 10px 50px 0px;
+    padding: 10px;
+}
+
+
+/* Menu */
+.menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "1 2 3"
+    "4 5 6"
+    ;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menuImg{
+    width: 400px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.menuText{
+    font-size: 15px;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+}
+
+.nosImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nosFoto{
+    width: 400px;
+    height: 250px;
+}
+
+.nosTexto{
+    display: flex;
+    font-size: 17px;
+    padding: 20px 40px 20px 40px;
+}
+
+
+/* Contacto */
+
+.boxMaps{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px 20px 20px;
+}
+
+.maps{
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+.subTitle{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px 20px 0px;
+}
+
+.pedidos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contactoImg{
+    font-size: 25px;
+}
+.contactoTexto{
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.boxImgApps{
+    display: flex;
+}
+
+.imgApps{
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 10px 20px 10px;
+}
+
+/* Opinion */
+
+.opinionDatos{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+    border: 0;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.datosNombre{
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.datosApellido{
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.datosResenia{
+    width: 500px;
+    height: 500px;
+    font-size: 20px;
+}
+
+.enviar{
+    display: flex;
+    justify-content: center;
+    width: cover;
+    padding: 10px 0px 10px 0px;
+}
+
+.enviarBoton{
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    background-color: #85B6FF;
+}
+
+.boxAgradecimiento{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.agradecimiento{
+    width: 1000px;
+    padding: 100px;
+}
+
+
+/* General */
+footer{
+    display: flex;
+    background-color: rgba(255, 150, 27, 0.9);
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconsFooter{
+    display: flex;
+    padding: 10px;
+}
+
+.iconsFooter li{
+    padding: 10px;
+}
+
+
+@media (max-width: 768px){
+    .carrusel{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        gap: 1%;
+    }
+    
+    .carruselImg{
+        width: 300px;
+        height: 190px;
+    }
+    .promosGrid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "1 2"
+        "3 4"
+        ;
+        gap: 10px;
+    }
+    .promos{
+        align-items: center;
+        justify-content: center;
+    }
+    .promosImg{
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+    
+    .promosText{
+        font-size: 15px;
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "1 2"
+        "3 4"
+        "5 6"
+        ;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .menuImg{
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 576px){
+    .promosGrid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "1"
+        "2"
+        "3"
+        "4"
+        ;
+        gap: 10px;
+    }
+    .promos{
+        align-items: center;
+        justify-content: center;
+    }
+    .promosImg{
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    
+    .promosText{
+        font-size: 10px;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "1"
+        "2"
+        "3"
+        "4"
+        "5"
+        "6"
+        ;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+}
